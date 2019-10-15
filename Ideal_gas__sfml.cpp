@@ -72,7 +72,7 @@ int abs(int a){
 
 
 void collide(Ball* ball1, Ball* ball2){
-         if ((ball2->R - ball1->R).modul() <=ball1->r + ball2->r){     
+         if ((ball2->R - ball1->R).modul() <= ball1->r + ball2->r){     
 		Vector2f e1 = Vector2f(1, 0);
 		Vector2f e2 = Vector2f(0, 1);
                 Vector2f r = Vector2f();
@@ -141,7 +141,7 @@ int main(){
            		ball[i].drawBall(&window);
 		}
 		window.display();
-		sf::sleep( sf::milliseconds(20));
+		sf::sleep(sf::milliseconds(20));
 	}
 
 
