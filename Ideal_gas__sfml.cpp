@@ -71,7 +71,6 @@ int abs(int a){
 }
 
 
-
 void collide(Ball* ball1, Ball* ball2){
          if ((ball2->R - ball1->R).modul() <=ball1->r + ball2->r){     
 		Vector2f e1 = Vector2f(1, 0);
