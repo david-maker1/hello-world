@@ -97,11 +97,6 @@ void collide(Ball* ball1, Ball* ball2){
 }
 
 
-
-
-
-
-
 int main(){
 	Ball *ball = new Ball[N];
 	
