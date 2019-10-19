@@ -13,7 +13,8 @@ const int R = 3;
 const int v_max = 10;
 
 
-struct Ball{
+class  Ball{
+public:
     	Vector2f R = Vector2f();
     	Vector2f v = Vector2f();
    	int r = 10;
