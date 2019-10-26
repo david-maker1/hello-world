@@ -3,12 +3,13 @@
 #ifndef Vector
 #define Vector
 
-struct Vector2f;
+class Vector2f;
 
 #endif
 
 
-struct Vector2f{
+class Vector2f{
+public:    
     float x = 0;
     float y = 0;
     Vector2f operator+ ( Vector2f v2 );
