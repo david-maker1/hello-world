@@ -87,13 +87,12 @@ void List::print(){
 	Node* nd = this->head;
         if (!nd)
 		return;
-
-	while(nd->next){
+	do{
                 std::cout << nd->val << " ";
                 nd = nd->next;
         }
-
-	std::cout << nd->val << std::endl;
+	while (nd->next);
+	std::cout << std::endl;
 }
 
 void List::clear(){
@@ -105,13 +104,13 @@ void List::clear(){
 int List::len(){
 	Node* nd = this->head;
 	int i = 0;
-        if (nd){
-                while(nd->next){
-                        i++;
-                        nd = nd->next;
-                }
-                i++;
+        if (!nd)
+		return 0;
+        do{
+		i++;
+                nd = nd->next;
         }
+        while (nd->next);
 	return i;
 }
 
