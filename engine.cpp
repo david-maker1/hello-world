@@ -65,23 +65,29 @@ class Component{
 private:
 	std::string name;
 public:
-	Component();
 	virtual ~Component() = 0;
 };
 
 
 class Collider :public Component{
 public:
-	Collider();
-	~Collider(){std::cout<<"qwerty"<<std::endl;};
+	~Collider() override; 
 };
+
+Collider:: ~Collider(){
+	std::cout << "Collider distructor" << std::endl;
+}
 
 
 class Renderer :public Component{
 public:
-	Renderer();
-	~Renderer();
+	~Renderer() override;
 };
+
+Renderer:: ~Renderer(){
+	std::cout << "Renderer distructor" << std::endl;
+}
+
 
 int main(){
 	GameObject obj;
