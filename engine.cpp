@@ -71,22 +71,16 @@ public:
 
 class Collider :public Component{
 public:
-	~Collider() override; 
+	~Collider() override{};
 };
 
-Collider:: ~Collider(){
-	std::cout << "Collider distructor" << std::endl;
-}
 
 
 class Renderer :public Component{
 public:
-	~Renderer() override;
+	~Renderer() override{};
 };
 
-Renderer:: ~Renderer(){
-	std::cout << "Renderer distructor" << std::endl;
-}
 
 
 int main(){
